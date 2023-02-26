@@ -23,7 +23,7 @@
         .content {
             text-align: center;
             border: 2px solid red;
-            padding: 30px;
+            padding: 40px;
             margin: 50px;
             font-size: 23px;
         }
