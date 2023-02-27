@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet {
         String angleType = request.getParameter("angle-type");
 
         double angle_number = Double.parseDouble(angle);
-        angle_number = (angleType.equals("Radians")) ? angle_number : (angle_number * (Math.PI / 180));
+        angle_number = (angleType.equals("Радианы")) ? angle_number : (angle_number * (Math.PI / 180));
 
         String[] mathFunctions = request.getParameterValues("math-function");
         try {
@@ -34,9 +34,9 @@ public class HelloServlet extends HttpServlet {
                     writer.println("<div class = container>");
                         writer.println("<h1> Вычисление тригонометрических функций </h1>");
                         writer.println("<div class = 'content'>");
-                            writer.println("<p><span> Angle: </span>" + angle + "</p>");
-                            writer.println("<p><span> Angle type: </span>" + angleType + "</p>");
-                            writer.println("<p><span> Math function: </span></p>");
+                            writer.println("<p><span> Размер угла: </span>" + angle + "</p>");
+                            writer.println("<p><span> Единица измерения угла: </span>" + angleType + "</p>");
+                            writer.println("<p><span> Тригонометрическая функция: </span></p>");
 
                             for (String mathFunction : mathFunctions) {
 

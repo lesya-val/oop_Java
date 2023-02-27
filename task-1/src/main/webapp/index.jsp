@@ -45,16 +45,16 @@
 
         <div class="content">
             <form action="hello" method="POST">
-                <span>Angle: </span>
+                <span>Угол: </span>
                 <input type = "number" name = "angle" />
                 <br><br>
 
-                <span>Angle type: </span>
-                <input type = "radio" name = "angle-type" value = "Radians"/>Radians
-                <input type = "radio" name = "angle-type" value = "Degrees"/>Degrees
+                <span>Единица измерения угла: </span>
+                <input type = "radio" name = "angle-type" value = "Радианы"/>Радианы
+                <input type = "radio" name = "angle-type" value = "Градусы"/>Градусы
                 <br><br>
 
-                <span>Math functions: </span>
+                <span>Тригонометрическая функция: </span>
                 <select name="math-function">
                     <option value = "sin"> Sin(x) </option>
                     <option value = "cos"> Cos(x) </option>
@@ -63,7 +63,7 @@
                 </select>
                 <br><br>
 
-                <input type = "submit" value = "Submit" />
+                <input type = "submit" value = "Вычислить" />
         </form>
         </div>
     </div>
