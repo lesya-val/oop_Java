@@ -5,39 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tomcat Example</title>
-    <style>
-        body {
-            padding: 20px;
-        }
-        h1 {
-            font-size: 38px;
-            margin-top: 55px;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column;
-            min-height: 80%;
-        }
-        .content {
-            text-align: center;
-            border: 2px solid red;
-            padding: 40px;
-            margin: 50px;
-            font-size: 23px;
-        }
-        input {
-            font-size: 20px;
-        }
-
-        select {
-            font-size: 20px;
-        }
-        span {
-            font-weight: 600;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="container">
