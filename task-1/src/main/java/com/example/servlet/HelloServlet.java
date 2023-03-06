@@ -1,13 +1,11 @@
 package com.example.servlet;
 
 import java.io.*;
-
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
@@ -16,8 +14,8 @@ public class HelloServlet extends HttpServlet {
         String angle = request.getParameter("angle");
         String angleType = request.getParameter("angle-type");
 
-        double angle_number = Double.parseDouble(angle);
-        angle_number = (angleType.equals("Радианы")) ? angle_number : (angle_number * (Math.PI / 180));
+        double angle_double = Double.parseDouble(angle);
+        angle_double = (angleType.equals("Радианы")) ? angle_double : (angle_double * (Math.PI / 180));
 
         String[] mathFunctions = request.getParameterValues("math-function");
         try {
@@ -42,22 +40,22 @@ public class HelloServlet extends HttpServlet {
 
                             switch (mathFunction) {
                                 case "sin": {
-                                    String result = String.format("sin(%s) = %.3f", angle, Math.sin(angle_number));
+                                    String result = String.format("sin(%s) = %.3f", angle, Math.sin(angle_double));
                                     writer.println("<p>" + result + "</p>");
                                     break;
                                 }
                                 case "cos": {
-                                    String result = String.format("cos(%s) = %.3f", angle, Math.cos(angle_number));
+                                    String result = String.format("cos(%s) = %.3f", angle, Math.cos(angle_double));
                                     writer.println("<p>" + result + "</p>");
                                     break;
                                 }
                                 case "tg": {
-                                    String result = String.format("tg(%s) = %.3f", angle, Math.tan(angle_number));
+                                    String result = String.format("tg(%s) = %.3f", angle, Math.tan(angle_double));
                                     writer.println("<p>" + result + "</p>");
                                     break;
                                 }
                                 case "ctg": {
-                                    String result = String.format("ctg(%s) = %.3f", angle, 1 / Math.tan(angle_number));
+                                    String result = String.format("ctg(%s) = %.3f", angle, 1 / Math.tan(angle_double));
                                     writer.println("<p>" + result + "</p>");
                                     break;
                                 }
