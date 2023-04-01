@@ -6,7 +6,6 @@ import jakarta.servlet.annotation.*;
 
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
