@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cloud.piranha.webapp.webservlet" type="repository">
+    <properties maven-id="cloud.piranha.webapp:piranha-webapp-webservlet:20.5.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cloud/piranha/webapp/piranha-webapp-webservlet/20.5.0/piranha-webapp-webservlet-20.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
